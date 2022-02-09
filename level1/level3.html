@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 3</title>
+    <link type="text/css" rel="stylesheet" href="../juego.css">
+    <script src="../juego.js"></script>
+    <script type="text/javascript">
+        function paddedFormat(num) {
+            return num < 10 ? "0" + num : num; 
+        }
+
+        function startCountDown(duration, element) {
+
+            let secondsRemaining = duration;
+            let min = 0;
+            let sec = 0;
+
+            let countInterval = setInterval(function () {
+
+                min = parseInt(secondsRemaining / 60);
+                sec = parseInt(secondsRemaining % 60);
+
+                element.textContent = `${paddedFormat(min)}:${paddedFormat(sec)}`;
+
+                secondsRemaining = secondsRemaining - 1;
+                if (secondsRemaining < 0) { location.reload();};
+
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let time_minutes = 5;
+            let time_seconds = 0;
+
+            let duration = time_minutes * 60 + time_seconds;
+
+            element = document.querySelector('#contador');
+            element.textContent = `${paddedFormat(time_minutes)}:${paddedFormat(time_seconds)}`;
+
+            startCountDown(--duration, element);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <a class="menu" href="../Index.html">Menú</a>
+        <h1 class="tiempo" id="contador"></h1>
+    </header>
+    <form>
+        <section>
+            <img id="carta0" src="../img/carta.png" onclick="carta(1), document.getElementById('carta0').style.display = 'none';">
+            <img id="cartta0" src="../cartas3/una copa.PNG"><br>
+            <img id="carta1" src="../img/carta.png" onclick="carta(2), document.getElementById('carta1').style.display = 'none';">
+            <img id="cartta1" src="../cartas3/6 cuchillos.PNG"><br>
+        </section>
+        <section>
+            <img id="carta2" src="../img/carta.png" onclick="carta(3), document.getElementById('carta2').style.display = 'none';">
+            <img id="cartta2" src="../cartas3/4 cuchillos.PNG"><br>
+            <img id="carta3" src="../img/carta.png" onclick="carta(4), document.getElementById('carta3').style.display = 'none';">
+            <img id="cartta3" src="../cartas3/una moneda.PNG"><br>
+        </section>
+        <section>
+            <img id="carta4" src="../img/carta.png" onclick="carta(5), document.getElementById('carta4').style.display = 'none';">
+            <img id="cartta4" src="../cartas3/3 palos.PNG"><br>
+            <img id="carta5" src="../img/carta.png" onclick="carta(1), document.getElementById('carta5').style.display = 'none';">
+            <img id="cartta5" src="../cartas3/una copa.PNG"><br>
+        </section>
+        <section>
+            <img id="carta6" src="../img/carta.png" onclick="carta(6), document.getElementById('carta6').style.display = 'none';">
+            <img id="cartta6" src="../cartas3/un tio con un palo.PNG"><br>
+            <img id="carta7" src="../img/carta.png" onclick="carta(7), document.getElementById('carta7').style.display = 'none';">
+            <img id="cartta7" src="../cartas3/4 copas.PNG"><br>
+        </section><br><br>
+        <section>
+            <img id="carta8" src="../img/carta.png" onclick="carta(3), document.getElementById('carta8').style.display = 'none';">
+            <img id="cartta8" src="../cartas3/4 cuchillos.PNG"><br>
+            <img id="carta9" src="../img/carta.png" onclick="carta(8), document.getElementById('carta9').style.display = 'none';">
+            <img id="cartta9" src="../cartas3/un tio en un caballo con una moneda.PNG"><br>
+        </section>
+        <section>
+            <img id="carta10" src="../img/carta.png" onclick="carta(5), document.getElementById('carta10').style.display = 'none';">
+            <img id="cartta10" src="../cartas3/3 palos.PNG"><br>
+            <img id="carta11" src="../img/carta.png" onclick="carta(2), document.getElementById('carta11').style.display = 'none';">
+            <img id="cartta11" src="../cartas3/6 cuchillos.PNG"><br>
+        </section>
+        <section>
+            <img id="carta12" src="../img/carta.png" onclick="carta(4), document.getElementById('carta12').style.display = 'none';">
+            <img id="cartta12" src="../cartas3/una moneda.PNG"><br>
+            <img id="carta13" src="../img/carta.png" onclick="carta(9), document.getElementById('carta13').style.display = 'none';">
+            <img id="cartta13" src="../cartas3/un tio con una copa en un caballo.PNG"><br>
+        </section>
+        <section>
+            <img id="carta14" src="../img/carta.png" onclick="carta(10), document.getElementById('carta14').style.display = 'none';">
+            <img id="cartta14" src="../cartas3/7 cuchillos.PNG"><br>
+            <img id="carta15" src="../img/carta.png" onclick="carta(8), document.getElementById('carta15').style.display = 'none';">
+            <img id="cartta15" src="../cartas3/un tio en un caballo con una moneda.PNG"><br>
+        </section> <br><br>
+        <section>
+            <img id="carta16" src="../img/carta.png" onclick="carta(6), document.getElementById('carta16').style.display = 'none';">
+            <img id="cartta16" src="../cartas3/un tio con un palo.PNG"><br>
+            <img id="carta17" src="../img/carta.png" onclick="carta(11), document.getElementById('carta17').style.display = 'none';">
+            <img id="cartta17" src="../cartas3/un tio con una copa.PNG"><br>
+        </section>
+        <section>
+            <img id="carta18" src="../img/carta.png" onclick="carta(10), document.getElementById('carta18').style.display = 'none';">
+            <img id="cartta18" src="../cartas3/7 cuchillos.PNG"><br>
+            <img id="carta19" src="../img/carta.png" onclick="carta(9), document.getElementById('carta19').style.display = 'none';">
+            <img id="cartta19" src="../cartas3/un tio con una copa en un caballo.PNG"><br>
+        </section>
+        <section>
+            <img id="carta20" src="../img/carta.png" onclick="carta(12), document.getElementById('carta20').style.display = 'none';">
+            <img id="cartta20" src="../cartas3/7 monedas.PNG"><br>
+            <img id="carta21" src="../img/carta.png" onclick="carta(12), document.getElementById('carta21').style.display = 'none';">
+            <img id="cartta21" src="../cartas3/7 monedas.PNG"><br>
+        </section>  
+        <section>
+            <img id="carta22" src="../img/carta.png" onclick="carta(7), document.getElementById('carta22').style.display = 'none';">
+            <img id="cartta22" src="../cartas3/4 copas.PNG"><br>
+            <img id="carta23" src="../img/carta.png" onclick="carta(11), document.getElementById('carta23').style.display = 'none';">
+            <img id="cartta23" src="../cartas3/un tio con una copa.PNG"><br>
+        </section>
+    </form>
+    <footer>
+        <input class="menu" id="terminar" type="button" value="Terminar" title="Para ganar tienes que completar este nivel" onclick="next(3)" style="text-align: center;" onmousemove="next(4)">
+    </footer>
+    <footer id="terminado" class="menu2" style="align-content: center; font-size: 3em; width: 25%; box-shadow: 4px 4px 10px blue, -4px -4px 10px blue, 4px -4px 10px blue, -4px 4px 10px blue; border-radius: 15px; background-color: black; margin-left: 37%; margin-top: 3%;">
+        Felicidades has ganado!
+    </footer>
+</body>
+</html>

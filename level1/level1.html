@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level1</title>
+    <link type="text/css" rel="stylesheet" href="../juego.css">
+    <script src="../juego.js"></script>
+    <script type="text/javascript">
+                function paddedFormat(num) {
+            return num < 10 ? "0" + num : num; 
+        }
+
+        function startCountDown(duration, element) {
+
+            let secondsRemaining = duration;
+            let min = 0;
+            let sec = 0;
+
+            let countInterval = setInterval(function () {
+
+                min = parseInt(secondsRemaining / 60);
+                sec = parseInt(secondsRemaining % 60);
+
+                element.textContent = `${paddedFormat(min)}:${paddedFormat(sec)}`;
+
+                secondsRemaining = secondsRemaining - 1;
+                if (secondsRemaining < 0) { location.reload(); };
+                if (secondsRemaining < 10){
+                    document.getElementById("contador").style.color = "red";
+                }
+
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let time_minutes = 1;
+            let time_seconds = 30;
+
+            let duration = time_minutes * 60 + time_seconds;
+
+            element = document.querySelector('#contador');
+            element.textContent = `${paddedFormat(time_minutes)}:${paddedFormat(time_seconds)}`;
+
+            startCountDown(--duration, element);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <a class="menu" href="../Index.html">Menú</a>
+        <div class="tiempo" id="contador"></div>
+    </header>
+    <form>
+        <section>
+            <img id="carta0" src="../img/carta.png" onclick="carta(1), document.getElementById('carta0').style.display = 'none';">
+            <img id="cartta0" src="../cartas1/flor rosa grande.PNG"><br>
+            <img id="carta1" src="../img/carta.png" onclick="carta(2), document.getElementById('carta1').style.display = 'none';">
+            <img id="cartta1" src="../cartas1/pajaro rosa.PNG"><br>
+        </section>
+        <section>
+            <img id="carta2" src="../img/carta.png" onclick="carta(3), document.getElementById('carta2').style.display = 'none';">
+            <img id="cartta2" src="../cartas1/pajaro azul.PNG"><br>
+            <img id="carta3" src="../img/carta.png" onclick="carta(4), document.getElementById('carta3').style.display = 'none';">
+            <img id="cartta3" src="../cartas1/pajaro azul grande.PNG"><br>
+        </section>
+        <section>
+            <img id="carta4" src="../img/carta.png" onclick="carta(5), document.getElementById('carta4').style.display = 'none';">
+            <img id="cartta4" src="../cartas1/flor azul.PNG"><br>
+            <img id="carta5" src="../img/carta.png" onclick="carta(4), document.getElementById('carta5').style.display = 'none';">
+            <img id="cartta5" src="../cartas1/pajaro azul grande.PNG"><br>
+        </section>
+        <section>
+            <img id="carta6" src="../img/carta.png" onclick="carta(1), document.getElementById('carta6').style.display = 'none';">
+            <img id="cartta6" src="../cartas1/flor rosa grande.PNG"><br>
+            <img id="carta7" src="../img/carta.png" onclick="carta(5), document.getElementById('carta7').style.display = 'none';">
+            <img id="cartta7" src="../cartas1/flor azul.PNG"><br>
+        </section>
+        <section>
+            <img id="carta8" src="../img/carta.png" onclick="carta(3), document.getElementById('carta8').style.display = 'none';">
+            <img id="cartta8" src="../cartas1/pajaro azul.PNG"><br>
+            <img id="carta9" src="../img/carta.png" onclick="carta(2), document.getElementById('carta9').style.display = 'none';">
+            <img id="cartta9" src="../cartas1/pajaro rosa.PNG"><br>
+        </section>
+    </form>
+    <footer>
+        <input class="menu" type="button" value="Siguiente nivel" title="Para pasar de nivel tienes que completar este" onclick="next(1)">
+    </footer>
+</body>
+</html>

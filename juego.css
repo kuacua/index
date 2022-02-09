@@ -1,0 +1,309 @@
+body{
+    background: url("img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    text-decoration: none;
+    background-color: rgb(11, 216, 11);
+    border: 4px solid green;
+    box-shadow: 4px 4px 10px green, -4px -4px 10px green, 4px -4px 10px green, -4px 4px 10px green;
+    border-radius: 15px;
+    font-size: 3em;
+    padding: 6px;
+    color: white;
+    margin:80px 50px 50px 50px;
+}
+.menu:hover{
+    animation: 1s menu;
+}
+@keyframes menu{
+    from{
+        font-size: 3em;
+    }
+    to{
+        font-size: 4em;
+    }
+}
+.tiempo{
+    color: white;
+    font-size: 2.3em;
+    position: absolute;
+    margin-left: 76%;
+}
+form{
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+#carta0{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta0{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}
+#carta1{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta1{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta2{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta2{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta3{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta3{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta4{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta4{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta5{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta5{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta6{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta6{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta7{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta7{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta8{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta8{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta9{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta9{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}
+#carta10{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta10{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta11{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta11{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta12{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta12{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta13{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta13{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta14{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta14{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta15{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta15{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta16{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta16{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta17{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta17{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta18{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta18{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta19{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta19{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta20{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta20{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta21{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta21{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta21{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta21{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta22{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta22{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}#carta23{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 100px;
+}
+#cartta23{
+    z-index: 2;
+    height: 150px;
+    width: 100px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-right: 45px;
+}
+#terminado{
+    opacity: 0;
+    color: white;
+    background-color: rgb(11, 216, 11);
+    margin-left: 44%;
+    margin-right: 46%;
+}
+
